@@ -63,7 +63,7 @@
 
     </div>
 
-
+    <label class="btn btn-success">Btn Ejemplo</label>
 
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
