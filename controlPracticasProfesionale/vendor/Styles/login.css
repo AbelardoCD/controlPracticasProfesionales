@@ -1,0 +1,59 @@
+﻿body {
+    min-height: 100vh;
+    background: #222 url('../../images/paisaje.png') center center no-repeat;
+    background-size: cover;
+    
+}
+    body:before {
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg,#52c4df,#ad55d1) center center no-repeat;
+        opacity: 0.3;
+    }
+
+#login {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    /*50% - altura/2    
+        50 -(40/2) = 50-20 = 30
+    */
+    top: 30%;
+    left: 35%;
+    background-color: rgba(129, 194, 35,0.6);
+    border-radius: 20px;
+}
+
+#registro {
+    position:absolute;
+    width:60%;
+    height:50%;
+    left:40%;
+    top:25%;
+}
+
+#elementos{
+    position:absolute;
+    width:80%;
+    height:50%;
+    top:10%;
+}
+
+img {
+    border-radius: 50%;
+    width:50%;
+}
+#logintitulo {
+margin-left:15%;
+}
+#logintitulo label{
+    color:white;
+}
+
+button{
+    margin-top:10px;
+}

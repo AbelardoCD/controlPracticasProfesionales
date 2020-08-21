@@ -1,0 +1,195 @@
+﻿
+:root {
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52,52,52);
+    --hovercolor: rgb(23,23,23);
+    --width-collapsed: 50px;
+}
+
+body {
+    background-color: #EBF1F1;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+#main-container{
+    color:black;
+}
+#sideMenu {
+    background-color: var(--bgcolor);
+    position: fixed; /*Para que no se mueva sin importar si bajamos o subimos*/
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+    #sideMenu a {
+        color: white;
+        text-decoration: none;
+    }
+    /*
+        HEADER
+
+    */
+    #sideMenu #header {
+        box-sizing: border-box; /*Para que no se haga un espacio adicional*/
+        border-bottom: solid 1px var(--hovercolor);
+    }
+
+        #sideMenu #header #title {
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+            font-family:'Microsoft Sans Serif';
+        
+            height:50px;
+        }
+
+        #sideMenu #header #title, #sideMenu #header #menu-btn {
+            vertical-align: middle;
+        }
+
+        #sideMenu #header #menu-btn {
+            display: inline-block;
+        }
+
+        #sideMenu #header #menu-btn {
+            cursor: pointer;
+            padding: 10px;
+            width: var(--width-collapsed);
+            box-sizing: border-box;
+        }
+
+            #sideMenu #header #menu-btn:hover {
+                background-color: var(--hovercolor);
+            }
+
+            #sideMenu #header #menu-btn .btn-ham {
+                background-color: #fff;
+                width: 100%;
+                height: 2px;
+                margin: 5px 0;
+            }
+    /*
+    PERFIL 
+*/
+    #sideMenu #perfil {
+        border-bottom: solid 1px var(--hovercolor);
+        padding: var(--padding) 0;
+        text-align: center;
+    }
+
+        #sideMenu #perfil #foto {
+            box-sizing: border-box;
+            padding: var(--padding);
+            margin: 0 auto;
+        }
+
+            #sideMenu #perfil #foto img {
+                border-radius: 50%; /*Para que la img sea redonda*/
+                width: 40%;
+            }
+
+        #sideMenu #perfil #foto, #sideMenu #perfil #name {
+            font-size: 24px;
+            padding: var(--padding) 0;
+            overflow: hidden;
+        }
+    /*
+    ITEM
+*/
+    #sideMenu #menu-items .item {
+        overflow: hidden;
+    }
+
+    #sideMenu #menu-items .item {
+        width: var(--width);
+    }
+
+        #sideMenu #menu-items .item .icon {
+            display: inline-block;
+        }
+
+        #sideMenu #menu-items .item .icon,
+        #sideMenu #menu-items .item .titulo {
+            font-size: 14px;
+            vertical-align: middle;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #sideMenu #menu-items .item a {
+            display: block;
+        }
+
+            #sideMenu #menu-items .item a:hover {
+                background-color: var(--hovercolor);
+            }
+
+    #sideMenu #menu-items .item .icon{
+        box-sizing:border-box;
+        padding: var(--padding);
+        width: var(--width-collapsed);
+    }
+        #sideMenu #menu-items .item .icon img{
+            width:100%;
+        }
+    #sideMenu #menu-items .item .titulo{
+        padding: var(--padding) 0;
+    }
+
+    #sideMenu #menu-items .item-separator{
+        height:1px;
+        border:solid 1px var(--hovercolor);
+        margin:10px 0;
+    }
+
+
+
+#head {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(52,52,52);
+    
+}
+
+/*COMPONENTES DENTRO DE MAIN-COMPONENT*/
+
+.tb-tamanio{
+    text-align:center;
+    padding:2px;
+    width:50%;
+    border:solid 1px;
+}
+
+#barra {
+    width: 100%;
+    height: 10px;    
+    background-color: #27AE60;
+    margin-top: 10px;
+}
+
+.tdbody {
+    padding:10px;
+
+}
+#cardProyecto{
+    color:white;
+    background-color:rgba(0, 0, 0,0.5);
+    border-radius:10px 10px 10px 10px;
+}
+
+.th-tamanio {
+    text-align: center;
+    padding: 2px;
+    width: 15%;
+    border: solid 1px;
+}
